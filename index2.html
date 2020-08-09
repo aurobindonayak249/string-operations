@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css2.css">
+	<script src="js1.js"></script>
+</head>
+<body class="small-container">
+<div class="box">
+	<h1> Input Form</h1>
+</div>
+<div class="box5">
+	<p>
+		<strong>Please fill the below details:</strong>
+	</p>
+</div>
+	<form onblur="validate();">
+		<p><label> First name: </label>
+		<input id="box1"type="text" id="frame"></p>
+		<p><label> Last name: </label>
+		<input class="box2" type="text">	
+		<p><label>your age :</label>
+		<input type="radio" name="gender" value="male" >male
+		<input type="radio" name="gender" value="female">female
+		<input type="radio" name="gender" value="others">others</p>
+		<p><label>Enter your date of birth</label>:
+		<input  class="box3" type="date"></p>
+		<p><label >Enter your phone number:</label>
+		<input class="smallbox" type="tel"></p>
+		<p><label>Enter your email:</label>
+		<input type="email" id="test"></p>
+		<p><label>what's your favourite:</label>
+		<input type="checkbox" name="food" value="biryani">biryani
+		<input type="checkbox" name="food" value="pizza">pizza
+		<input type="checkbox" name="food" value="burger">burger</p>
+		<p><label><button onclick="myfunction()">finish</button></label></p><hr>
+	</form>
+	<script type="text/javascript">
+	document.getElementByid('frame').onblur = function() {validate()}
+	function myfunction(){
+		alert("Thankyou!");
+	}
+</script>
+<div class="box6">
+<p><strong>Thank you for submitting details,we will let you soon further process.</strong></p>
+</div>
+</body>
+</html>
